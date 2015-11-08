@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NTNU QUEUE system</title>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<nav>
+  <div class="nav-wrapper light-blue darken-4 z-depth-1">
+  <a href="#" class="brand-logo" style="padding-left:20px">NTNU QUEUE</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">JavaScript</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="row" style="margin-bottom:0px">
+     <div class="col blue lighten-4 m9 s12" style=" min-height: 800px;">
+       <!--<div class="container" style=""> container-->
+         <div class="row">
+           <div class="col m7">
+             <div class="card-panel white">
+               <div class="row">
+                 <div class="col m1"><i class="small material-icons">announcement</i></div>
+                 <div class="col m9">Labspot: 22</div>
+                 <div class="col m1"><a href="#take" data-position="bottom" onclick="Materialize.toast('You have been assigned to help Labspot: 22', 2000)"><i class="small material-icons green-text">done</i></a></div>
+                 <div class="col m1"><a class="modal-trigger" href="#modal1"><i class="small material-icons red-text">close</i></a></div>
+                 <div class="col m12 "><b>Help us with:</b> I'm sexually aroused </div>
+              </div>
+            </div>
+            <div class="card-panel white">
+              <div class="row">
+                <div class="col s1"><i class="small material-icons">announcement</i></div>
+                <div class="col s9">Labspot: 21</div>
+                <div class="col s1"><a href="#take"><i class="small material-icons green-text">done</i></a></div>
+                <div class="col s1"><a href="#dismiss"><i class="small material-icons red-text">close</i></a></div>
+                <div class="col s12 "><b>Help us with:</b> Our elevator is not working :C</div>
+             </div>
+           </div>
+          </div>
+          <div class="col m5">
+            <div class="card">
+              <div class="card-move-up">
+                <div class="move-up blue">
+                  <div class="activator card-image waves-effect waves-block waves-light">
+                  <div class="valign-wrapper ">
+                      <i class="material-icons white-text valign" style="padding-left:5px">insert_chart</i><span class="valign white-text" style="padding-left:5px">Statistics</span>
+                  </div>
+                </div>
+                <div id="chart" class="white-text"></div>
+
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-move-up">
+                <div class="move-up green lighten-2 ">
+                <div class="valign-wrapper">
+                  <i class="material-icons white-text valign" style="padding-left:5px">assignment</i><h5 class="valign white-text" style="padding-left:5px">Completed requests: 3</h5>
+                </div>
+                  <ul class="collapsible no-mar" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">done_all</i>First</div>
+                      <div class="collapsible-body white"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">thumb_up</i>Second</div>
+                      <div class="collapsible-body white"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">chat_bubble_outline</i>Third</div>
+                      <div class="collapsible-body white"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                  </ul>
+
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!--</div>container-->
+     </div>
+     <div class="col s3 hide-on-med-and-down z-depth-1" style=" min-height: 800px;">
+       <h5>Chat</h5>
+        <ul >
+          <li>
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="yuna.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <span class="black-text">
+                Hey I got a problem with assignment 2
+              </span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="yuna.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <span class="black-text">
+                Oh, I had that too. We solved it bye adding 1+1 which equaled 2
+              </span>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+        <div class="input-field col s12 footer">
+          <i class="material-icons prefix">message</i>
+          <input placeholder="" id="message" type="text" class="validate">
+        </div>
+     </div>
+</div>
+<!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Dismiss</h4>
+      <p>Are you sure you want to dismiss this request for help?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat "><i class="small material-icons red-text valign">close</i><a>
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat "><i class="small material-icons green-text valign">done</i></a>
+
+    </div>
+  </div>
+ <!--Footer-->
+<footer class="page-footer light-blue darken-3" style="margin-top:0px">
+  <div class="container">
+           <div class="row">
+             <div class="col l6 s12">
+               <h5 class="white-text">Footer Content</h5>
+               <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+             </div>
+          </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+<script type="text/javascript" src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script type="text/javascript" src="chart.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal({
+    dismissible: true, // Modal can be dismissed by clicking outside of the modal
+  });
+});
+
+</script>
+
+</body>
+</html>
